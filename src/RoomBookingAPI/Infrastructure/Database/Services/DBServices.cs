@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RoomBookingAPI.src.RoomBookingAPI.Infrastructure.Database.Enums;
 using RoomBookingAPI.src.RoomBookingAPI.Models;
 
 namespace RoomBookingAPI.src.RoomBookingAPI.Infrastructure.Database.Services
@@ -18,11 +19,18 @@ namespace RoomBookingAPI.src.RoomBookingAPI.Infrastructure.Database.Services
         {
             //List<Room> roomsList = await _context.Room.ToListAsync();
 
-        }FileName
-        public async Task<Room> GetRoomByMatch()
+        }
+        public async Task<Room> GetRoomByMatch(RoomSearchType searchType, string value)
         {
-            switch()
-
+            switch(searchType)
+            {
+                case RoomSearchType.Id:
+                    {
+                        int id = int.Parse(value);
+                        Room room = await _context.Room.FindAsync(id);
+                        return room;
+                    }
+            }
 
 
             //Room room = await _context.Room.FindAsync(id);

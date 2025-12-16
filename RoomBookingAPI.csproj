@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\RoomBookingAPI\Infrastructure\Database\Models\" />
     <Folder Include="Tests\" />
   </ItemGroup>
 
