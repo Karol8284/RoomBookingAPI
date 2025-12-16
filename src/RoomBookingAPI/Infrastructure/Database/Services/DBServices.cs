@@ -16,8 +16,16 @@ namespace RoomBookingAPI.src.RoomBookingAPI.Infrastructure.Database.Services
         [HttpGet]
         public async Task<List<Room> GetAllRooms()
         {
-            List<Room> roomsList = await _context.Room.ToListAsync();
+            //List<Room> roomsList = await _context.Room.ToListAsync();
 
+        }FileName
+        public async Task<Room> GetRoomByMatch()
+        {
+            switch()
+
+
+
+            //Room room = await _context.Room.FindAsync(id);
         }
 
 
