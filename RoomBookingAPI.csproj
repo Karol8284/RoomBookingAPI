@@ -11,12 +11,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.11" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="SourceGear.sqlite3" Version="3.50.4.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RoomBookingAPI.Tests\" />
-    <Folder Include="src\RoomBookingAPI\Infrastructure\Database\" />
+    <Folder Include="src\RoomBookingAPI\Infrastructure\Database\Models\" />
+    <Folder Include="Tests\" />
   </ItemGroup>
 
 </Project>
